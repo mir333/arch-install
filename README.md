@@ -131,3 +131,10 @@ Chrom is not in repo needs to be recompiled.
 * install deps sudo ```pacman -S libxss snappy ttf-liberation```
 * run ```makepkg```
 * install the package ```sudo pacman -U google-chrome-47.0.2526.106-1-x86_64.pkg.tar.xz```
+
+## locale
+add keyboards (gnome ui)
+### add locale
+* uncoment required locale in ```sudo vim /etc/locale.gen```
+* run the locale generator ```sudo locale-gen```
+* set the locale with ```localectl set-locale LANG=en_US.UTF-8```
