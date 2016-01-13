@@ -68,3 +68,33 @@ afther rebooting log in as root with the set password and enable the dhcpcd serv
 ```
 systemctl enable dhcpcd
 ```
+#### install vim 
+```pacman -S vim```
+
+### enable multilib repo for 32bit compatibility
+Enable multilib repo for 32bit compatibility. Search for 32 in the file
+```
+vim /etc/pacman.conf
+```
+
+## handle video drivers
+### install drivers
+First, make it work in intel only mode. Install the intel driver and mesa.
+```
+pacman -S xf86-video-intel mesa-libgl lib32-mesa-libgl
+```
+### blacklist nouveau
+make shure that nouveau wont load
+```
+echo blacklist nouveau >> /etc/modprobe.d/blacklist.conf
+```
+
+### install gnome
+```
+pacman -S gnome
+```
+### test gnome
+```
+systemctl start gdm
+```
+
