@@ -119,7 +119,7 @@ systemctl enable gdm
 
 ## Programs to be installed
 ```
-pacman -S guake gedit meld vlc skype git
+pacman -S guake gedit meld vlc skype git openssh 
 ```
 
 ## Wifi
@@ -149,9 +149,29 @@ add keyboards (gnome ui)
 * uncoment required locale in ```sudo vim /etc/locale.gen```
 * run the locale generator ```sudo locale-gen```
 * set the locale with ```localectl set-locale LANG=en_US.UTF-8```
-* restart and set language in gnome controle center
+* restart and set language in gnome controle center (select both options: language nad formats). If there are no unicode chars in console, reseltect in gnome and log out-log in.
 
 ## VirtualBOx
 ```
 pacman -S virtualbox 
+```
+
+## MySQL
+install maria DB
+```
+sudo pacman -S  mariadb mariadb-clients
+```
+
+## Postgre SQL
+install
+```
+sudo pacman -S  postgresql
+sudo passwd postgres
+su - postgres
+initdb --locale en_GB.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
+```
+create user and db
+```
+createuser --interactive
+createdb liferay
 ```
