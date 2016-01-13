@@ -150,3 +150,8 @@ add keyboards (gnome ui)
 * run the locale generator ```sudo locale-gen```
 * set the locale with ```localectl set-locale LANG=en_US.UTF-8```
 * restart and set language in gnome controle center
+
+## VirtualBOx
+```
+pacman -S virtualbox 
+```
