@@ -129,6 +129,12 @@ sudo pacman -S networkmanager networkmanager-openvpn networkmanager-vpnc network
 sudo systemctl enable NetworkManager
 ```
 
+## touchpad
+Install touchpad drivers and configure it in gnome.
+```
+sudo pacman -S xf86-input-synaptics
+```
+
 ## google chrome
 Chrom is not in repo needs to be recompiled. 
 * Download the tar form https://aur.archlinux.org/packages/google-chrome/
