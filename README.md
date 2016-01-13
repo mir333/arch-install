@@ -89,6 +89,11 @@ make shure that nouveau wont load
 echo blacklist nouveau >> /etc/modprobe.d/blacklist.conf
 ```
 
+### instal xorg
+```
+pacman -S xorg-server xorg-server-utils xorg-xinit
+```
+
 ### install gnome
 ```
 pacman -S gnome
