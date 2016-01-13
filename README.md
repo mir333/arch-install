@@ -123,3 +123,11 @@ Nerwork manager needs to be instaled and enabled
 sudo pacman -S networkmanager networkmanager-openvpn networkmanager-vpnc network-manager-applet
 sudo systemctl enable NetworkManager
 ```
+
+## google chrome
+Chrom is not in repo needs to be recompiled. 
+* Download the tar form https://aur.archlinux.org/packages/google-chrome/
+* extract the bundle
+* install deps sudo ```pacman -S libxss snappy ttf-liberation```
+* run ```makepkg```
+* install the package ```sudo pacman -U google-chrome-47.0.2526.106-1-x86_64.pkg.tar.xz```
