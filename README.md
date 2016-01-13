@@ -119,7 +119,7 @@ systemctl enable gdm
 
 ## Programs to be installed
 ```
-pacman -S guake gedit meld vlc skype
+pacman -S guake gedit meld vlc skype git
 ```
 
 ## Wifi
