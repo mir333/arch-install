@@ -143,3 +143,4 @@ add keyboards (gnome ui)
 * uncoment required locale in ```sudo vim /etc/locale.gen```
 * run the locale generator ```sudo locale-gen```
 * set the locale with ```localectl set-locale LANG=en_US.UTF-8```
+* restart and set language in gnome controle center
