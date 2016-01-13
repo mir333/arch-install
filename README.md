@@ -98,3 +98,16 @@ pacman -S gnome
 systemctl start gdm
 ```
 
+## create user
+### create user
+```
+useradd -m -G wheel -s /bin/bash ligasm
+```
+### enable sudo for him
+edit /etc/sudoers amd uncomment the wheel ALL line
+
+## enable gnome
+```
+systemctl enable gdm
+```
+### reboot
