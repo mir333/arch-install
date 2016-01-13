@@ -111,3 +111,8 @@ edit /etc/sudoers amd uncomment the wheel ALL line
 systemctl enable gdm
 ```
 ### reboot
+
+## Programs to be installed
+```
+pacman -S guake 
+```
