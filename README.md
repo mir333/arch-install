@@ -116,3 +116,10 @@ systemctl enable gdm
 ```
 pacman -S guake 
 ```
+
+## Wifi
+Nerwork manager needs to be instaled and enabled
+```
+sudo pacman -S networkmanager networkmanager-openvpn networkmanager-vpnc network-manager-applet
+sudo systemctl enable NetworkManager
+```
