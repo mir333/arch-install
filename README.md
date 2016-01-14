@@ -121,6 +121,10 @@ systemctl enable gdm
 ```
 pacman -S guake gedit meld vlc skype git openssh 
 ```
+### make external ntfs work
+```
+pacman -S ntfs-3g 
+```
 
 ## Wifi
 Nerwork manager needs to be instaled and enabled
