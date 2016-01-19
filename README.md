@@ -119,7 +119,7 @@ systemctl enable gdm
 
 ## Programs to be installed
 ```
-pacman -S guake gedit meld vlc skype git openssh multitail npm wget
+pacman -S guake gedit meld vlc skype git openssh multitail npm wget zip tree
 ```
 ### make external ntfs work
 ```
