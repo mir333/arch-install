@@ -119,7 +119,7 @@ systemctl enable gdm
 
 ## Programs to be installed
 ```
-pacman -S guake gedit meld vlc skype git openssh multitail npm wget zip tree
+pacman -S guake gedit meld vlc skype git openssh multitail npm wget zip tree rsync scp
 ```
 ### make external ntfs work
 ```
@@ -178,4 +178,13 @@ create user and db
 ```
 createuser --interactive
 createdb liferay
+```
+
+## Printer
+```
+sudo pacman -S  cups ghostscript  gsfonts  avahi hp-setup 
+sudo systemctl start cups-browsed.service
+sudo systemctl enable cups-browsed.service
+hp-setup -i
+
 ```
